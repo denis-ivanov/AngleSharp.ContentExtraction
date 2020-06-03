@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngleSharp.ContentExtraction", "AngleSharp.ContentExtraction\AngleSharp.ContentExtraction.csproj", "{108A5CB1-86AB-4D31-908A-B62259FEEE6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngleSharp.ContentExtraction.IntegrationTests", "AngleSharp.ContentExtraction.IntegrationTests\AngleSharp.ContentExtraction.IntegrationTests.csproj", "{2BFB2C13-89EF-47DB-A611-4990A5DCA231}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{108A5CB1-86AB-4D31-908A-B62259FEEE6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{108A5CB1-86AB-4D31-908A-B62259FEEE6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{108A5CB1-86AB-4D31-908A-B62259FEEE6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{108A5CB1-86AB-4D31-908A-B62259FEEE6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFB2C13-89EF-47DB-A611-4990A5DCA231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFB2C13-89EF-47DB-A611-4990A5DCA231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFB2C13-89EF-47DB-A611-4990A5DCA231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFB2C13-89EF-47DB-A611-4990A5DCA231}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
