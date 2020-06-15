@@ -3,6 +3,7 @@ using System.Xml;
 using AngleSharp.Css.Dom;
 using AngleSharp.Dom;
 using AngleSharp.Html.Dom;
+using AngleSharp.Text;
 
 namespace AngleSharp.ContentExtraction
 {
@@ -19,14 +20,14 @@ namespace AngleSharp.ContentExtraction
 
         protected virtual bool IgnoreElement(IElement element)
         {
-            return TagNames.NoScript.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
-                   TagNames.Figcaption.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
-                   TagNames.Figure.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
-                   TagNames.Aside.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) |
-                   TagNames.Footer.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
-                   TagNames.Footer.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
-                   TagNames.Header.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
-                   TagNames.Svg.Equals(element.TagName, StringComparison.OrdinalIgnoreCase) ||
+            return element.TagName.Is(TagNames.NoScript) ||
+                   element.TagName.Is(TagNames.Figcaption) ||
+                   element.TagName.Is(TagNames.Figure) ||
+                   element.TagName.Is(TagNames.Aside) ||
+                   element.TagName.Is(TagNames.Footer) ||
+                   element.TagName.Is(TagNames.Footer) ||
+                   element.TagName.Is(TagNames.Header) ||
+                   element.TagName.Is(TagNames.Svg) ||
                    element.GetStyle()?.GetDisplay() == "none";
         }
 
