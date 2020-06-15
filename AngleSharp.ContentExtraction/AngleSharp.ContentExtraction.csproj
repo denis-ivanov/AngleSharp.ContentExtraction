@@ -4,14 +4,18 @@
     <TargetFramework>netstandard2.1</TargetFramework>
     <Authors>Denis Ivanov</Authors>
     <PackageId>AngleSharp.ContentExtraction</PackageId>
-    <Version>0.0.1</Version>
-    <FileVersion>0.0.1</FileVersion>
-    <AssemblyVersion>0.0.1</AssemblyVersion>
+    <Version>0.0.2</Version>
+    <FileVersion>0.0.2</FileVersion>
+    <AssemblyVersion>0.0.2</AssemblyVersion>
+    <Description>Content extraction via text density</Description>
+    <PackageProjectUrl>https://github.com/denis-ivanov/AngleSharp.ContentExtraction</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>HTML, Content extraction</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="AngleSharp" Version="0.14.0" />
-    <PackageReference Include="AngleSharp.Css" Version="0.14.1" />
+    <PackageReference Include="AngleSharp.Css" Version="0.14.2" />
   </ItemGroup>
 
 </Project>
