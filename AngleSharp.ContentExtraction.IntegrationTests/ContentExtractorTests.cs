@@ -1,27 +1,26 @@
-using System.Threading.Tasks;
 using AngleSharp.Html.Dom;
 using NUnit.Framework;
+using System.Threading.Tasks;
 
-namespace AngleSharp.ContentExtraction.IntegrationTests
+namespace AngleSharp.ContentExtraction.IntegrationTests;
+
+[TestFixture]
+public class ContentExtractorTests
 {
-    [TestFixture]
-    public class ContentExtractorTests
+    [Test]
+    public async Task Extract_IntegrationTest()
     {
-        [Test]
-        public async Task Extract_IntegrationTest()
-        {
-            // Arrange
-            var config = Configuration.Default.WithDefaultLoader();
-            var address = "https://lenta.ru/articles/2020/05/13/coronausa/";
-            var context = BrowsingContext.New(config);
-            var document = (IHtmlDocument)await context.OpenAsync(address);
-            var extractor = new ContentExtractor();
+        // Arrange
+        var config = Configuration.Default.WithDefaultLoader();
+        const string address = "https://lenta.ru/articles/2020/05/13/coronausa/";
+        var context = BrowsingContext.New(config);
+        var document = (IHtmlDocument)await context.OpenAsync(address);
+        var extractor = new ContentExtractor();
 
-            // Act
-            extractor.Extract(document);
+        // Act
+        extractor.Extract(document);
 
-            // Assert
-            Assert.Pass();
-        }
+        // Assert
+        Assert.Pass();
     }
 }
