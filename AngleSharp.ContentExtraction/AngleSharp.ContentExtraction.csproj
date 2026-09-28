@@ -4,9 +4,9 @@
     <TargetFrameworks>net7.0;net8.0;net9.0</TargetFrameworks>
     <Authors>Denis Ivanov</Authors>
     <PackageId>AngleSharp.ContentExtraction</PackageId>
-    <Version>2.0.1</Version>
-    <FileVersion>2.0.1</FileVersion>
-    <AssemblyVersion>2.0.1</AssemblyVersion>
+    <Version>2.0.2</Version>
+    <FileVersion>2.0.2</FileVersion>
+    <AssemblyVersion>2.0.2</AssemblyVersion>
     <Description>Content extraction via text density</Description>
     <PackageProjectUrl>https://github.com/denis-ivanov/AngleSharp.ContentExtraction</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
